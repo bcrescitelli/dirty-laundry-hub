@@ -3,52 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dirty Laundry Games</title>
+    <title>Dirty Laundry Games | The Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .game-title { font-family: 'Bungee', cursive; }
+    </style>
 </head>
-<body class="min-h-screen bg-slate-900 text-white font-sans p-8">
+<body class="min-h-screen bg-[#0f172a] text-slate-100 p-6 md:p-12">
 
-    <header class="max-w-6xl mx-auto text-center mb-16">
-        <h1 class="text-6xl font-black tracking-tighter italic uppercase text-yellow-400 drop-shadow-lg">
-            Dirty Laundry Games
+    <header class="max-w-6xl mx-auto text-center mb-20">
+        <div class="inline-block bg-yellow-400 text-black px-4 py-1 rounded-md mb-4 font-black uppercase tracking-widest text-sm transform -rotate-2">
+            Now Playing
+        </div>
+        <h1 class="game-title text-6xl md:text-8xl tracking-tighter text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]">
+            DIRTY <span class="text-yellow-400">LAUNDRY</span>
         </h1>
-        <p class="mt-4 text-slate-400 text-xl">One brand. Four ways to lose your friends.</p>
+        <p class="text-slate-400 text-xl mt-4 font-light tracking-wide">
+            A boutique collection of social party games.
+        </p>
     </header>
 
-    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         
-        <a href="https://slime.dirtylaundry.games" class="group relative overflow-hidden rounded-2xl bg-slate-800 border-2 border-slate-700 hover:border-green-500 transition-all">
-            <div class="p-8">
-                <h2 class="text-3xl font-bold group-hover:text-green-400 transition-colors">Slime-Cut Studio</h2>
-                <p class="mt-2 text-slate-400">The high-stakes game of messy edits.</p>
-                <div class="mt-6 inline-block bg-green-600 px-6 py-2 rounded-full font-bold uppercase tracking-wider group-hover:bg-green-500">Launch Game</div>
+        <a href="https://murder.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-red-900 to-black transition-transform hover:scale-[1.02]">
+            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-red-500/50 transition-colors">
+                <span class="text-red-500 font-bold text-xs uppercase tracking-[0.2em]">Strategy / Mystery</span>
+                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Murder At the Cabin</h2>
+                <p class="text-slate-400 leading-relaxed">Someone in this room is a killer. Can you find them before the snow clears?</p>
+                <div class="mt-8 flex items-center text-red-500 font-bold uppercase text-sm tracking-widest">
+                    Enter the Cabin <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                </div>
             </div>
         </a>
 
-        <a href="https://pot.dirtylaundry.games" class="group relative overflow-hidden rounded-2xl bg-slate-800 border-2 border-slate-700 hover:border-red-500 transition-all">
-            <div class="p-8">
-                <h2 class="text-3xl font-bold group-hover:text-red-400 transition-colors">Stir the Pot</h2>
-                <p class="mt-2 text-slate-400">Air out the grievances. Who said what?</p>
-                <div class="mt-6 inline-block bg-red-600 px-6 py-2 rounded-full font-bold uppercase tracking-wider group-hover:bg-red-500">Launch Game</div>
+        <a href="https://pot.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-orange-500 to-yellow-600 transition-transform hover:scale-[1.02]">
+            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-orange-500/50 transition-colors">
+                <span class="text-orange-500 font-bold text-xs uppercase tracking-[0.2em]">Social / Chaos</span>
+                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Stir the Pot</h2>
+                <p class="text-slate-400 leading-relaxed">Air out the grievances. Ask the spicy questions. Watch the drama unfold.</p>
+                <div class="mt-8 flex items-center text-orange-500 font-bold uppercase text-sm tracking-widest">
+                    Start Cooking <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                </div>
             </div>
         </a>
 
-        <a href="https://points.dirtylaundry.games" class="group relative overflow-hidden rounded-2xl bg-slate-800 border-2 border-slate-700 hover:border-blue-500 transition-all">
-            <div class="p-8">
-                <h2 class="text-3xl font-bold group-hover:text-blue-400 transition-colors">Here's My Point!</h2>
-                <p class="mt-2 text-slate-400">Persuade the room, even if you're wrong.</p>
-                <div class="mt-6 inline-block bg-blue-600 px-6 py-2 rounded-full font-bold uppercase tracking-wider group-hover:bg-blue-500">Launch Game</div>
+        <a href="https://points.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-400 transition-transform hover:scale-[1.02]">
+            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-blue-500/50 transition-colors">
+                <span class="text-blue-400 font-bold text-xs uppercase tracking-[0.2em]">Debate / Humor</span>
+                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Here's My Point!</h2>
+                <p class="text-slate-400 leading-relaxed">Persuade the room with absolutely zero facts. The most confident liar wins.</p>
+                <div class="mt-8 flex items-center text-blue-400 font-bold uppercase text-sm tracking-widest">
+                    Present Now <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                </div>
             </div>
         </a>
 
-        <a href="https://museum.dirtylaundry.games" class="group relative overflow-hidden rounded-2xl bg-slate-800 border-2 border-slate-700 hover:border-purple-500 transition-all">
-            <div class="p-8">
-                <h2 class="text-3xl font-bold group-hover:text-purple-400 transition-colors">Museum of Modern Mistakes</h2>
-                <p class="mt-2 text-slate-400">A gallery for your worst creative impulses.</p>
-                <div class="mt-6 inline-block bg-purple-600 px-6 py-2 rounded-full font-bold uppercase tracking-wider group-hover:bg-purple-500">Launch Game</div>
+        <a href="https://museum.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-purple-600 to-pink-500 transition-transform hover:scale-[1.02]">
+            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-purple-500/50 transition-colors">
+                <span class="text-purple-400 font-bold text-xs uppercase tracking-[0.2em]">Creative / Drawing</span>
+                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Museum of Mistakes</h2>
+                <p class="text-slate-400 leading-relaxed">A gallery dedicated to your worst creative impulses. It's art... technically.</p>
+                <div class="mt-8 flex items-center text-purple-400 font-bold uppercase text-sm tracking-widest">
+                    Visit Gallery <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+                </div>
             </div>
         </a>
 
     </main>
+
+    <footer class="max-w-6xl mx-auto text-center mt-24 pt-8 border-t border-slate-800">
+        <p class="text-slate-500 text-sm tracking-widest uppercase">
+            &copy; 2026 Dirty Laundry Games • Built with Vercel & Firebase
+        </p>
+    </footer>
 </body>
 </html>
