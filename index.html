@@ -9,6 +9,8 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         .game-title { font-family: 'Bungee', cursive; }
+        /* Ensuring the Murder card has a solid, punchy red background */
+        .murder-card { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
     </style>
 </head>
 <body class="min-h-screen bg-[#0f172a] text-slate-100 p-6 md:p-12">
@@ -27,46 +29,46 @@
 
     <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
         
-        <a href="https://murder.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-red-900 to-black transition-transform hover:scale-[1.02]">
-            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-red-500/50 transition-colors">
-                <span class="text-red-500 font-bold text-xs uppercase tracking-[0.2em]">Strategy / Mystery</span>
+        <a href="https://murder.dirtylaundry.games" class="group relative block p-1 rounded-3xl transition-transform hover:scale-[1.02] murder-card shadow-2xl">
+            <div class="bg-slate-900/40 backdrop-blur-md p-8 rounded-[22px] h-full border border-white/10 group-hover:border-red-400 transition-colors">
+                <span class="text-red-400 font-bold text-xs uppercase tracking-[0.2em]">Strategy / Mystery</span>
                 <h2 class="game-title text-3xl mt-2 mb-3 text-white">Murder At the Cabin</h2>
-                <p class="text-slate-400 leading-relaxed">Someone in this room is a killer. Can you find them before the snow clears?</p>
-                <div class="mt-8 flex items-center text-red-500 font-bold uppercase text-sm tracking-widest">
+                <p class="text-slate-200 leading-relaxed font-medium">Someone in this room is a killer. But they aren't even sure of it yet. Can you work together to deduce who committed the crime?</p>
+                <div class="mt-8 flex items-center text-red-400 font-bold uppercase text-sm tracking-widest">
                     Enter the Cabin <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
             </div>
         </a>
 
-        <a href="https://pot.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-orange-500 to-yellow-600 transition-transform hover:scale-[1.02]">
-            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-orange-500/50 transition-colors">
+        <a href="https://pot.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-orange-500 to-yellow-600 transition-transform hover:scale-[1.02] shadow-2xl">
+            <div class="bg-slate-900/80 backdrop-blur-md p-8 rounded-[22px] h-full border border-white/5 group-hover:border-orange-500/50 transition-colors">
                 <span class="text-orange-500 font-bold text-xs uppercase tracking-[0.2em]">Social / Chaos</span>
                 <h2 class="game-title text-3xl mt-2 mb-3 text-white">Stir the Pot</h2>
-                <p class="text-slate-400 leading-relaxed">Air out the grievances. Ask the spicy questions. Watch the drama unfold.</p>
+                <p class="text-slate-300 leading-relaxed">Watch the head chef make a fool of themself as you guess what they're trying to describe. Sabotage players in real time with mundane kitchen tasks to win big.</p>
                 <div class="mt-8 flex items-center text-orange-500 font-bold uppercase text-sm tracking-widest">
                     Start Cooking <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
             </div>
         </a>
 
-        <a href="https://points.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-400 transition-transform hover:scale-[1.02]">
-            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-blue-500/50 transition-colors">
-                <span class="text-blue-400 font-bold text-xs uppercase tracking-[0.2em]">Debate / Humor</span>
-                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Here's My Point!</h2>
-                <p class="text-slate-400 leading-relaxed">Persuade the room with absolutely zero facts. The most confident liar wins.</p>
-                <div class="mt-8 flex items-center text-blue-400 font-bold uppercase text-sm tracking-widest">
-                    Present Now <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+        <a href="https://museum.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-purple-600 to-pink-500 transition-transform hover:scale-[1.02] shadow-2xl">
+            <div class="bg-slate-900/80 backdrop-blur-md p-8 rounded-[22px] h-full border border-white/5 group-hover:border-purple-500/50 transition-colors">
+                <span class="text-purple-400 font-bold text-xs uppercase tracking-[0.2em]">Creative / Auction</span>
+                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Museum of Mistakes</h2>
+                <p class="text-slate-300 leading-relaxed">Create, curate, and bid. But have the best collection in your art gallery in order to win.</p>
+                <div class="mt-8 flex items-center text-purple-400 font-bold uppercase text-sm tracking-widest">
+                    Visit Gallery <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
             </div>
         </a>
 
-        <a href="https://museum.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-purple-600 to-pink-500 transition-transform hover:scale-[1.02]">
-            <div class="bg-slate-900/90 backdrop-blur-xl p-8 rounded-[22px] h-full border border-white/5 group-hover:border-purple-500/50 transition-colors">
-                <span class="text-purple-400 font-bold text-xs uppercase tracking-[0.2em]">Creative / Drawing</span>
-                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Museum of Mistakes</h2>
-                <p class="text-slate-400 leading-relaxed">A gallery dedicated to your worst creative impulses. It's art... technically.</p>
-                <div class="mt-8 flex items-center text-purple-400 font-bold uppercase text-sm tracking-widest">
-                    Visit Gallery <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
+        <a href="https://points.dirtylaundry.games" class="group relative block p-1 rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-400 transition-transform hover:scale-[1.02] shadow-2xl">
+            <div class="bg-slate-900/80 backdrop-blur-md p-8 rounded-[22px] h-full border border-white/5 group-hover:border-blue-500/50 transition-colors">
+                <span class="text-blue-400 font-bold text-xs uppercase tracking-[0.2em]">Debate / Humor</span>
+                <h2 class="game-title text-3xl mt-2 mb-3 text-white">Here's My Point!</h2>
+                <p class="text-slate-300 leading-relaxed">Persuade the room with absolutely zero facts and in 30 seconds. Heckle your friends to throw them off their game.</p>
+                <div class="mt-8 flex items-center text-blue-400 font-bold uppercase text-sm tracking-widest">
+                    Present Now <span class="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
             </div>
         </a>
@@ -74,8 +76,8 @@
     </main>
 
     <footer class="max-w-6xl mx-auto text-center mt-24 pt-8 border-t border-slate-800">
-        <p class="text-slate-500 text-sm tracking-widest uppercase">
-            &copy; 2026 Dirty Laundry Games • Built with Vercel & Firebase
+        <p class="text-slate-500 text-sm tracking-widest uppercase italic">
+            &copy; 2026 Dirty Laundry Games
         </p>
     </footer>
 </body>
